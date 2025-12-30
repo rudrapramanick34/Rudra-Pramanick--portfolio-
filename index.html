@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lanQg="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rudra Pramanick | Creative Editor Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{
+background:#0b0f14;
+color:#e6e6e6;
+line-height:1.6;
+}
+
+section{padding:70px 8%}
+h2{font-size:34px;margin-bottom:25px}
+p{opacity:.85}
+
+/* HERO */
+.hero{
+display:flex;
+align-items:center;
+gap:50px;
+}
+.hero img{
+width:300px;
+border-radius:16px;
+box-shadow:0 20px 60px rgba(0,0,0,.6);
+}
+.hero-content h1{font-size:46px}
+.hero-content span{color:#9aa4b2}
+.hero-content button{
+margin-top:25px;
+padding:14px 32px;
+border:none;
+border-radius:10px;
+background:#1f2933;
+color:#fff;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+.hero-content button:hover{background:#2f3b47}
+
+/* ABOUT */
+.about{max-width:900px}
+
+/* WORK */
+.grid{display:grid;gap:25px}
+.videos{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.photos{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.grid iframe,.grid img{
+width:100%;
+border-radius:14px;
+}
+
+/* TOOLS */
+.tools{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(110px,1fr));
+gap:30px;
+text-align:center;
+}
+.tools img{
+width:56px;
+opacity:.9;
+}
+
+/* CONTACT */
+.contact-box{
+background:#111821;
+padding:35px;
+border-radius:18px;
+max-width:600px;
+}
+.contact-box a{
+display:inline-block;
+margin-top:15px;
+padding:12px 22px;
+border-radius:8px;
+background:#1f2933;
+color:#fff;
+font-weight:600;
+}
+
+/* ANIMATION */
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+.reveal.active{opacity:1;transform:none}
+
+@media(max-width:768px){
+.hero{
+flex-direction:column;
+text-align:center;
+}
+.hero img{width:240px}
+section{padding:60px 6%}
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero reveal">
+<img src="https://i.postimg.cc/D01WNH9H/1767025104042.jpg" alt="Portrait">
+<div class="hero-content">
+<h1>RUDRA PRAMANICK</h1>
+<span>Video Editor • Photo Editor</span>
+<button onclick="document.getElementById('work').scrollIntoView({behavior:'smooth'})">
+View My Work
+</button>
+</div>
+</section>
+
+<section class="about reveal">
+<h2>About Me</h2>
+<p>
+I Am A Editor Working Since 2022, Focused On Delivering Professional, Story-Driven Visuals. I Work With Creators And Brands Who Value Clean Editing, Strong Pacing, And Visual Clarity. This Portfolio Is Fully Designed And Developed By Me.
+</p>
+</div>
+</section>
+
+</div>
+<section id="work" class="reveal">
+<h2>Video Projects</h2>
+<div class="grid videos">
+<div class="video-card" style="background-color: #000; padding: 16px; border-radius: 14px; max-width: 420px; text-align: center;">
+<div class="video-card" style="background-color: #000; padding: 16px; border-radius: 14px; max-width: 420px; text-align: center;">
+  <img 
+    src="https://i.postimg.cc/J44mv9Ww/Screenshot-2025-12-31-01-33-14-31-965bbf4d18d205f782c6b8409c5773a4.jpg" 
+    alt="Video Portfolio Folder"
+    class="video-thumb"
+    style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 12px;"
+  />
+
+  <h3 style="color: #fff; font-size: 18px; margin-bottom: 10px;">Prefer To Watch In Highst Quality</h3>
+
+  <a 
+    href="https://youtube.com/shorts/lPf8XxlHi4U?feature=share"
+    target="_blank"
+    class="view-btn"
+    style="
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 22px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #000;
+      background: #ffffff;
+      border-radius: 999px;
+      text-decoration: none;
+      letter-spacing: 0.4px;
+      box-shadow: 0 10px 30px rgba(255,255,255,0.25);
+      transition: all 0.25s ease;
+    "
+    onmouseover="this.style.transform='translateY(-2px) scale(1.05)'; this.style.boxShadow='0 14px 40px rgba(255,255,255,0.4)';"
+    onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 10px 30px rgba(255,255,255,0.25)';"
+  >
+    Click Here 
+  </a>
+</div>
+
+</div>
+
+<div class="video-card" style="background-color: #000; padding: 16px; border-radius: 14px; max-width: 420px; text-align: center;">
+<div class="video-card" style="background-color: #000; padding: 16px; border-radius: 14px; max-width: 420px; text-align: center;">
+  <img 
+    src="https://i.postimg.cc/GmT01R7x/Screenshot-2025-12-31-01-34-09-88-c1ebbaff44ba152fb7f7c2e1f7129fd1.jpg" 
+    alt="Video Portfolio Folder"
+    class="video-thumb"
+    style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 12px;"
+  />
+
+  <h3 style="color: #fff; font-size: 18px; margin-bottom: 10px;">Prefer To Watch In Highst Quality</h3>
+
+  <a 
+    href="https://youtube.com/shorts/5TFYvn9QL1w?feature=share"
+    target="_blank"
+    class="view-btn"
+    style="
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 22px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #000;
+      background: #ffffff;
+      border-radius: 999px;
+      text-decoration: none;
+      letter-spacing: 0.4px;
+      box-shadow: 0 10px 30px rgba(255,255,255,0.25);
+      transition: all 0.25s ease;
+    "
+    onmouseover="this.style.transform='translateY(-2px) scale(1.05)'; this.style.boxShadow='0 14px 40px rgba(255,255,255,0.4)';"
+    onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 10px 30px rgba(255,255,255,0.25)';"
+  >
+    Click Here 
+  </a>
+</section>
+</div>
+
+</div>
+<section id="work" class="reveal">
+<h2>More Sample Work</h2>
+<div class="grid videos">
+<div class="video-card" style="background-color: #000; padding: 16px; border-radius: 14px; max-width: 420px; text-align: center;">
+<div class="video-card" style="background-color: #000; padding: 16px; border-radius: 14px; max-width: 420px; text-align: center;">
+  <img 
+    src="https://i.postimg.cc/90wPQLvS/1767125347241.jpg" 
+    alt="Video Portfolio Folder"
+    class="video-thumb"
+    style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 12px;"
+  />
+
+  <h3 style="color: #fff; font-size: 18px; margin-bottom: 10px;"> You Will Be Redirect In G-drive </h3>
+
+  <a 
+    href="https://drive.google.com/drive/folders/1Obxfg-nqPS6zwcynbLM6gUnk5LnUWbpV"
+    target="_blank"
+    class="view-btn"
+    style="
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 22px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #000;
+      background: #ffffff;
+      border-radius: 999px;
+      text-decoration: none;
+      letter-spacing: 0.4px;
+      box-shadow: 0 10px 30px rgba(255,255,255,0.25);
+      transition: all 0.25s ease;
+    "
+    onmouseover="this.style.transform='translateY(-2px) scale(1.05)'; this.style.boxShadow='0 14px 40px rgba(255,255,255,0.4)';"
+    onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 10px 30px rgba(255,255,255,0.25)';"
+  >
+    Open Drive
+  </a>
+</div>
+
+</div>
+</section>
+  <!-- Photo Section -->
+  <h2 style="text-align: center; margin-top: 60px;">Photo Project</h2>
+  <div class="grid photos" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+    <img src="https://i.postimg.cc/4dnL1602/2E5A9849-2.jpg" style="max-width: 420px; width: 100%; border-radius: 12px;">
+    <img src="https://i.postimg.cc/wMpNBHDD/2E5A9849.jpg" style="max-width: 420px; width: 100%; border-radius: 12px;">
+  </div>
+</section>
+
+</div>
+<h2 style="margin-top:60px"> Some Work Using AI </h2>
+<div class="grid photos">
+<img src="https://i.postimg.cc/QdpRBqL8/New-Project-16-9AA591D.png">
+</div>
+</section>
+
+</div>
+<section class="reveal">
+<h2>My Old Animation Channel</h2>
+<div class="contact-box">
+<img src="https://i.postimg.cc/pdWvHzKS/high-1767122129.jpg" alt="Shri Story YT Logo" style="width:80px;border-radius:10px;vertical-align:middle;margin-right:15px;">
+<p>
+This was my personal cartoon animation channel <strong>Shri Story YT</strong>. I handled everything A to Z — sound design, editing, thumbnails, animation, character design, background creation, all by myself. I quit the channel due to time management issues, but proud of the work.
+</p>
+<a href="https://youtube.com/@shristoryyt" target="_blank" style="display:inline-block;margin-top:12px;padding:12px 22px;border-radius:8px;background:#1f2933;color:#fff;font-weight:600;">
+View Channel
+</a>
+</div>
+</section>
+
+</div>
+<section class="reveal">
+<h2> For Video Editing </h2>
+<div class="tools">
+<div><img src="https://i.postimg.cc/k5H7vDtb/images.png"><p>CapCut</p></div>
+<div><img src="https://i.postimg.cc/2S4WJRxL/images.jpg"><p>Alight Motion</p></div>
+<div><img src="https://i.postimg.cc/NF99kWMy/images-(2).png"><p>After Effects</p></div>
+<div><img src="https://i.postimg.cc/FKTY59kr/image.png"><p>Filmora</p></div>
+<div><img src="https://i.postimg.cc/nMfzYrgN/images-(1).png"><p>Premiere Pro</p></div>
+</div>
+</section>
+
+</div>
+<section class="reveal">
+<h2> For Photo Editing </h2>
+<div class="tools">
+<div><img src="https://i.postimg.cc/QtLM1SPy/images-(3).png"><p>Photoshop</p></div>
+<div><img src="https://i.postimg.cc/vH8Zr4PL/16cc4d-f1fc1f37517a481a85486b169b2725ec-mv2.png"><p>Canva</p></div>
+<div><img src="https://i.postimg.cc/TwXRp1Lb/qo-Kd-Iepm-K5YDqozg-QFE6QNl3O0JM-R8O97NZYd-sm1I.jpg"><p>Lightroom</p></div>
+<div><img src="https://i.postimg.cc/Jzf820Qg/rectangle-gemini-google-icon-symbol-logo-free-png.png"><p>Gemini AI </p></div>
+</div>
+</section>
+
+</div>
+<section class="reveal">
+<h2>Contact</h2>
+<div class="contact-box">
+<p>Let’s connect and discuss your project.</p>
+
+<a href="mailto:pramanickrudra74@gmail.com">
+📩 Email Me
+</a><br>
+
+<a href="https://wa.me/917063062326?text=Hi%20Rudra,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank">
+💬 Chat on WhatsApp
+</a>
+</div>
+</section>
+
+<script>
+const reveals=document.querySelectorAll('.reveal');
+window.addEventListener('scroll',()=>{
+reveals.forEach(r=>{
+if(r.getBoundingClientRect().top < window.innerHeight-100){
+r.classList.add('active');
+}
+});
+});
+</script>
+
+</body>
+</html>
